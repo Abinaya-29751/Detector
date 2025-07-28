@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from flask import Flask, render_template, request
 
 # Load the dataset
-df = pd.read_csv(r"C:\Users\HP\Desktop\INTERNSHIP\PROJECTS\Spam\data\spam.csv", encoding='latin1')
+df = pd.read_csv("spam.csv", encoding='latin1')
 
 # Drop unnecessary columns
 df.drop(columns=['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], inplace=True)
